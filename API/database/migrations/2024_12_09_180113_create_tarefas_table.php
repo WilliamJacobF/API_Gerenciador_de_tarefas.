@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('tarefas', function (Blueprint $table) {
             $table->id();
             $table->string('tarefa');
-            $table->date('prazo');
+            $table->string('prazo');
             $table->timestamps();
         });
     }
