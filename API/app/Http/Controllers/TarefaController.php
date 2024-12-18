@@ -23,6 +23,6 @@ class TarefaController extends Controller
     }
     public function destroy($id){
         $tarefa = Tarefa::findOrFail($id);
-        $tarefa->update();
+        $tarefa->delete();
     }
 }
